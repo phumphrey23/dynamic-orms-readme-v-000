@@ -16,4 +16,4 @@ puts "song album: " + song2.album
 song2.save
 
 data = DB[:conn].execute("SELECT * FROM songs")
-puts data
+puts data.compact
